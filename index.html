@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        
+        <!-- Game Mode Selection -->
+        <div id="mode-selection" class="mode-selection">
+            <h2>Select Game Mode</h2>
+            <button id="single-player" class="mode-btn">Single Player</button>
+            <button id="two-players" class="mode-btn">Two Players</button>
+        </div>
+
+        <!-- Game Board -->
+        <div id="game-board" class="game-board hidden">
+            <div class="status" id="status">Player X's turn</div>
+            <div class="board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+            <button id="restart" class="restart-btn">Restart Game</button>
+        </div>
+
+        <!-- Scoreboard -->
+        <div id="scoreboard" class="scoreboard hidden">
+            <h3>Score</h3>
+            <div class="scores">
+                <div class="score">
+                    <span>Player X</span>
+                    <span id="score-x">0</span>
+                </div>
+                <div class="score">
+                    <span>Draws</span>
+                    <span id="score-draw">0</span>
+                </div>
+                <div class="score">
+                    <span>Player O</span>
+                    <span id="score-o">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio elements for sound effects -->
+    <audio id="click-sound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"></audio>
+    <audio id="win-sound" src="https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3"></audio>
+    <audio id="draw-sound" src="https://assets.mixkit.co/active_storage/sfx/1434/1434-preview.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html> 
